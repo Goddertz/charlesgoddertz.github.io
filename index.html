@@ -1,243 +1,586 @@
-<!DOCTYPE html><!--  Last Published: Thu Oct 12 2023 05:25:42 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="61bab9b1fbbadcec804a8d4f" data-wf-site="61bab9b1fbbadc5d254a8d4e">
-<head>
-  <meta charset="utf-8">
-  <title>Charles Goddertz Tap Dance</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/charles-a37730.webflow.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Cormorant Garamond:300,300italic,regular,italic,500,500italic"]  }});</script>
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-</head>
-<body class="body">
-  <div class="global">
-    <div class="html w-embed">
-      <style>
-@media only screen and (min-width: 1440px) {
-	body {font-size: 0.9em;}
-}
-@media only screen and (max-width: 1124px)  {
-     .nav-link {font-size: 0.913rem;}
-     .text-bio, .text-form, .copyright {font-size: 1.125rem;}
-}
-@media only screen and (max-width: 1124px)  {
-     .heading-1 {font-size: 1.858rem;}
-}
-@media only screen and (max-width: 768px)  {
-     .paragraph {font-size: 1.776rem;}
-     .main-image-wrapper {width: 19.2rem;}
-}
-@media only screen and (max-width: 584px)  {
-		 .heading {font-size: 3.03rem;}
-      .date {font-size: 1.278rem;}
-}
-.background-video {
-  transform: translateZ(0);
-}
-/* Tapping animations */
-.tempo-even-whole {
-  animation: blink-even 1s linear infinite;
-}
-.tempo-even-whole-rev {
-    animation: blink-even 1s linear infinite reverse;
-  }
-.tempo-even-hf {
-    animation: blink-even 0.5s linear infinite;
-}
-.tempo-even-qt {
-    animation: blink-even 0.25s linear infinite;
-}
-.tempo-swing {
-    animation: blink-swing 1s linear infinite;
-}
-.tempo-swing-rev {
-    animation: blink-swing 1s linear infinite reverse;
-}
-@keyframes blink-even {
-    0% { opacity: 1;}
-    49% { opacity: 1;}
-    50% { opacity: 0;}
-    99% { opacity: 0;}
-    100% { opacity: 1;}
-  }
-@keyframes blink-swing {
-    0% { opacity: 1;}
-    14% { opacity: 1;}
-    15% { opacity: 0;}
-    25% { opacity: 0;}
-    26% { opacity: 1;}
-    35% { opacity: 1;}
-    49% { opacity: 1;}
-    50% { opacity: 0;}
-    74% { opacity: 0;}
-    75% { opacity: 0;}
-    99% { opacity: 0;}
-    100% { opacity: 0;}    
-}
-</style>
-    </div>
-  </div>
-  <div id="top" class="div-block-5"></div>
-  <div id="nav" data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-    <div class="container w-container">
-      <a href="#top" class="brand w-nav-brand"><img src="images/Charles-Goddertz-Tap-Dance-Logo.svg" loading="lazy" alt="Charles Goddertz Tap Dance Logo" class="image"></a>
-      <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href="#bio" class="nav-link w-nav-link">_Bio_</a>
-        <a href="#classes" class="nav-link w-nav-link">_Classes_</a>
-        <a href="#contact" class="nav-link w-nav-link">_Contact_</a>
-        <a href="#footer" class="nav-link w-nav-link">_Social Media_</a>
-      </nav>
-      <div class="menu-button w-nav-button">
-        <div class="w-icon-nav-menu"></div>
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Sat Oct 14 2023 01:58:08 GMT+0000 (Coordinated Universal Time)  -->
+<html
+  data-wf-page="61bab9b1fbbadcec804a8d4f"
+  data-wf-site="61bab9b1fbbadc5d254a8d4e"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Charles Goddertz Tap Dance</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/charles-a37730.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Cormorant Garamond:300,300italic,regular,italic,500,500italic",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+  </head>
+  <body class="body">
+    <div class="global">
+      <div class="html w-embed">
+        <style>
+          @media only screen and (min-width: 1440px) {
+            body {
+              font-size: 0.9em;
+            }
+          }
+          @media only screen and (max-width: 1124px) {
+            .nav-link {
+              font-size: 0.913rem;
+            }
+            .text-bio,
+            .text-form,
+            .copyright {
+              font-size: 1.125rem;
+            }
+          }
+          @media only screen and (max-width: 1124px) {
+            .heading-1 {
+              font-size: 1.858rem;
+            }
+          }
+          @media only screen and (max-width: 768px) {
+            .paragraph {
+              font-size: 1.776rem;
+            }
+            .main-image-wrapper {
+              width: 19.2rem;
+            }
+          }
+          @media only screen and (max-width: 584px) {
+            .heading {
+              font-size: 3.03rem;
+            }
+            .date {
+              font-size: 1.278rem;
+            }
+          }
+          .background-video {
+            transform: translateZ(0);
+          }
+          /* Tapping animations */
+          .tempo-even-whole {
+            animation: blink-even 1s linear infinite;
+          }
+          .tempo-even-whole-rev {
+            animation: blink-even 1s linear infinite reverse;
+          }
+          .tempo-even-hf {
+            animation: blink-even 0.5s linear infinite;
+          }
+          .tempo-even-qt {
+            animation: blink-even 0.25s linear infinite;
+          }
+          .tempo-swing {
+            animation: blink-swing 1s linear infinite;
+          }
+          .tempo-swing-rev {
+            animation: blink-swing 1s linear infinite reverse;
+          }
+          @keyframes blink-even {
+            0% {
+              opacity: 1;
+            }
+            49% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            99% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+          @keyframes blink-swing {
+            0% {
+              opacity: 1;
+            }
+            14% {
+              opacity: 1;
+            }
+            15% {
+              opacity: 0;
+            }
+            25% {
+              opacity: 0;
+            }
+            26% {
+              opacity: 1;
+            }
+            35% {
+              opacity: 1;
+            }
+            49% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            74% {
+              opacity: 0;
+            }
+            75% {
+              opacity: 0;
+            }
+            99% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        </style>
       </div>
     </div>
-  </div>
-  <div class="scroll-wrapper">
-    <section class="main-text-section">
-      <div class="container">
-        <h1 class="heading"><span class="tempo-even-whole">_</span><span class="heading1">Charles Goddertz</span><span class="tempo-swing">_ </span><span class="tempo-swing-rev">_</span><span class="heading2">Tap Dance</span><span class="tempo-even-hf">_</span></h1>
-        <p data-w-id="88d71b0d-8d0c-f921-c95e-31c9617d822c" style="-webkit-transform:translate3d(0, 300px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 300px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 300px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 300px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph"><span class="tempo-even-qt">_</span><span class="text1">Dancing professionally since 1966.</span><span class="tempo-even-hf">_ </span><span class="tempo-swing-rev">_</span><span class="text2">Created a uniquely simple and understandable progressive method for learning or teaching tap.</span><span class="tempo-swing">_ </span><span class="tempo-even-hf">_</span><span class="text3">Mentoring students all over the world.</span><span class="tempo-even-whole-rev">_ </span><span class="tempo-even-qt">_</span><span class="text4">Currently teaching at Steps on Broadway, NYC.</span><span class="tempo-even-whole">_</span></p>
-      </div>
-    </section>
-  </div>
-  <div class="video">
-    <div class="container center">
-      <div data-w-id="157d46d3-e18b-22a0-5c14-7d361a84b07d" class="main-image-wrapper"><img src="images/Charles-Goddertz-Tap-Dance.jpg" loading="lazy" data-w-id="91f20384-8eba-8459-630b-6b71d0674d5c" sizes="(max-width: 767px) 307.1953125px, 40vw" alt="" srcset="images/Charles-Goddertz-Tap-Dance-p-500.jpeg 500w, images/Charles-Goddertz-Tap-Dance-p-800.jpeg 800w, images/Charles-Goddertz-Tap-Dance-p-1080.jpeg 1080w, images/Charles-Goddertz-Tap-Dance.jpg 1200w"></div>
-    </div>
-    <div class="container center">
-      <div class="background-video">
-        <div data-poster-url="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-poster-00001.jpg" data-video-urls="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.mp4,videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-2 w-background-video w-background-video-atom"><video id="1b3b9ad6-964a-1950-20b9-a5b99a912bc0-video" autoplay="" loop="" style="background-image:url(&quot;videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-            <source src="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.mp4" data-wf-ignore="true">
-            <source src="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.webm" data-wf-ignore="true">
-          </video></div>
-      </div>
-      <p class="caption">Flo-Bert Award 2011</p>
-    </div>
-  </div>
-  <div data-w-id="f0da21b8-1398-ce8b-8559-b8adc7b4ff1b" class="main-wrapper">
-    <div data-w-id="70065484-527f-d1b5-7157-cf3d3ba09332" class="div-block">
-      <div class="bio-section">
-        <div id="bio" class="container">
-          <h2 class="heading-1"><span class="tempo-even-whole">_</span>Bio<span class="tempo-swing">_</span></h2>
-          <div data-w-id="3cbc277e-3f29-a6fb-711b-555829d7dda5" class="gallery-container">
-            <div style="-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="gallery-wrapper">
-              <div class="gallery">
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Carol-Channing-Hello-Dolly.jpg" loading="lazy" alt="a picture with Carol Channing in Hello Dolly 1978" class="image-2">
-                  <p class="caption">with Carol Channing in Hello Dolly (1978)</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-02-2.jpg" loading="lazy" alt="a picture with teacher Jack Stanly and students" class="image-2">
-                  <p class="caption">with teacher Jack Stanly and students</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Melba-Huber.jpg" loading="lazy" alt="a picture with Melba Huber at the Steve Condos memorial in New York" class="image-2">
-                  <p class="caption">with Melba Huber at the Steve Condos memorial in New York</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Pearl-Bailey-1.jpg" loading="lazy" alt="a picture with Pearl Bailey in Hello Dolly 1976" class="image-2">
-                  <p class="caption">with Pearl Bailey in Hello Dolly (1976)</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Karen-Amerautt.jpg" loading="lazy" alt="a picture with dancing partner Karen Amerautt" class="image-2">
-                  <p class="caption">with dancing partner Karen Amerautt</p>
-                </div>
-              </div>
-              <div class="gallery">
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Carol-Channing-Hello-Dolly.jpg" loading="lazy" alt="a picture with Carol Channing in Hello Dolly 1978" class="image-2">
-                  <p class="caption">with Carol Channing in Hello Dolly (1978)</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-02-2.jpg" loading="lazy" alt="a picture with teacher Jack Stanly and students" class="image-2">
-                  <p class="caption">with teacher Jack Stanly and students</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Melba-Huber.jpg" loading="lazy" alt="a picture with Melba Huber at the Steve Condos memorial in New York" class="image-2">
-                  <p class="caption">with Melba Huber at the Steve Condos memorial in New York</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Pearl-Bailey-1.jpg" loading="lazy" alt="a picture with Pearl Bailey in Hello Dolly 1976" class="image-2">
-                  <p class="caption">with Pearl Bailey in Hello Dolly (1976)</p>
-                </div>
-                <div class="gallery-image"><img src="images/Charles-Dance-and-Arts-Magazine-Karen-Amerautt.jpg" loading="lazy" alt="a picture with dancing partner Karen Amerautt" class="image-2">
-                  <p class="caption">with dancing partner Karen Amerautt</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container-text">
-            <p class="text-bio"><span class="tempo-even-whole">_</span> Charles Goddertz has been dancing professionally, on and off broadway since 1966. He has worked with Carol Channing, Pearl Bailey, Bernedette Peters, Donna Mckechnie and has tap danced in the musical Seesaw, for Tommy Tune. <span class="tempo-even-hf">_</span></p>
-            <p class="text-bio"><span class="tempo-even-hf">_</span> Charles currently teaches tap dancing at Steps On Broadway here in New York City and has been on Faculty since 1986. He has taught tap dancing for Cap 21/NYU Tisch, Dance Educators of America, Dance Masters of America, Canada, Mexico, El Salvador, Moscato Tap Festival in Rome and Milan, Big Apple Tap Festival and Tap City here in NYC. His students have tap danced on and off Broadway, Las Vegas, for The Rockettes and for Tap Festivals around the world, and USA. A brief listing of students include Raquel Valiente, Darrin Contessa, Paula Leggett Chase, Joni Michelle, Ayodele Casel &amp; Kazu Kumaigai. <span class="tempo-swing">_</span></p>
-            <p class="text-bio"><span class="tempo-swing">_</span> Mr. Goddertz’s own tap dance performance background includes First Night Burlington-a New Years Gala, Danny Hoctor’s Dance Caravan, Moscato Tap Festivals Rome and Milan, The Tap Extravaganza, of which he received the Flo-Bert Award in 2011, Steps Beyond and Tap City with dance partner, the late Michele Ribble. <span class="tempo-even-qt">_</span></p>
-            <p class="text-bio"><span class="tempo-even-qt">_</span> Charles has been tap dancing since the age of five, when his mother taught him his first Irish and waltz clog. He received the prestigious Hoofers Award from ATDF Tap City in July 2020 and did so in memory of his late dancing partner, Michele Ribble, and tap teachers Florence Coleman, Stan Mazin, Ronn Daniels, Jack Stanly and lastly, dear mom and family who have supported him through the years. <span class="tempo-even-whole-rev">_</span></p>
-          </div>
+    <div id="top" class="div-block-5"></div>
+    <div
+      id="nav"
+      data-animation="default"
+      data-collapse="small"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navbar w-nav"
+    >
+      <div class="container w-container">
+        <a href="#top" class="brand w-nav-brand"
+          ><img
+            src="images/Charles-Goddertz-Tap-Dance-Logo.svg"
+            loading="lazy"
+            alt="Charles Goddertz Tap Dance Logo"
+            class="image"
+        /></a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="#bio" class="nav-link w-nav-link">_Bio_</a>
+          <a href="#classes" class="nav-link w-nav-link">_Classes_</a>
+          <a href="#contact" class="nav-link w-nav-link">_Contact_</a>
+          <a href="#footer" class="nav-link w-nav-link">_Social Media_</a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
         </div>
       </div>
-      <div id="classes" class="schedule-section">
+    </div>
+    <div class="scroll-wrapper">
+      <section class="main-text-section">
         <div class="container">
-          <h2 class="heading-1"><span class="tempo-even-hf">_</span>Classes<span class="tempo-swing">_</span></h2>
-          <div class="schedule-videos">
-            <div class="background-video">
-              <div data-poster-url="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-poster-00001.jpg" data-video-urls="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.mp4,videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-2 w-background-video w-background-video-atom"><video id="55ed725d-3908-8af1-79dc-27e7aea1f3b8-video" autoplay="" loop="" style="background-image:url(&quot;videos/KULTUR-Charles-Goddertz-Tap-Intermediate-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                  <source src="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.mp4" data-wf-ignore="true">
-                  <source src="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.webm" data-wf-ignore="true">
-                </video></div>
-            </div>
-          </div>
-          <div class="container-text">
-            <p class="date">FYI, it&#x27;s <span class="today">DATE</span> today.</p>
-            <div class="container-text whole">
-              <div class="container-table">
-                <div class="div-block-3 green">
-                  <p class="date table">Wed.</p>
-                </div>
-                <div class="div-block-3 green">
-                  <p class="date table">6:00PM</p>
-                </div>
-                <div class="div-block-3 green">
-                  <p class="date table">Adv/Beg.</p>
-                </div>
-                <div class="div-block-3 green">
-                  <p class="date table">Steps on Broadway, NYC</p>
-                </div>
-              </div>
-            </div>
-            <div class="container-text whole">
-              <div class="container-table">
-                <div class="div-block-3 yellow">
-                  <p class="date table">Wed.</p>
-                </div>
-                <div class="div-block-3 yellow">
-                  <p class="date table">7:45PM</p>
-                </div>
-                <div class="div-block-3 yellow">
-                  <p class="date table">Basic</p>
-                </div>
-                <div class="div-block-3 yellow">
-                  <p class="date table">Steps on Broadway, NYC</p>
-                </div>
-              </div>
-            </div>
-            <div class="container-text whole">
-              <div class="container-table">
-                <div class="div-block-3 blue">
-                  <p class="date table">Sat.</p>
-                </div>
-                <div class="div-block-3 blue">
-                  <p class="date table">12:45PM</p>
-                </div>
-                <div class="div-block-3 blue">
-                  <p class="date table">Beg.</p>
-                </div>
-                <div class="div-block-3 blue">
-                  <p class="date table">Steps on Broadway, NYC</p>
-                </div>
-              </div>
-            </div>
-            <h3 class="heading-2 text-form">For private lessons, please contact me.</h3>
-            <div class="spacer"></div>
-          </div>
+          <h1 class="heading">
+            <span class="tempo-even-whole">_</span
+            ><span class="heading1">Charles Goddertz</span
+            ><span class="tempo-swing">_ </span
+            ><span class="tempo-swing-rev">_</span
+            ><span class="heading2">Tap Dance</span
+            ><span class="tempo-even-hf">_</span>
+          </h1>
+          <p
+            data-w-id="88d71b0d-8d0c-f921-c95e-31c9617d822c"
+            style="
+              -webkit-transform: translate3d(0, 300px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0, 300px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0, 300px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0, 300px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              opacity: 0;
+            "
+            class="paragraph"
+          >
+            <span class="tempo-even-qt">_</span
+            ><span class="text1">Dancing professionally since 1966.</span
+            ><span class="tempo-even-hf">_ </span
+            ><span class="tempo-swing-rev">_</span
+            ><span class="text2"
+              >Created a uniquely simple and understandable progressive method
+              for learning or teaching tap.</span
+            ><span class="tempo-swing">_ </span
+            ><span class="tempo-even-hf">_</span
+            ><span class="text3">Mentoring students all over the world.</span
+            ><span class="tempo-even-whole-rev">_ </span
+            ><span class="tempo-even-qt">_</span
+            ><span class="text4"
+              >Currently teaching at Steps on Broadway, NYC.</span
+            ><span class="tempo-even-whole">_</span>
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="video">
+      <div class="container center">
+        <div
+          data-w-id="157d46d3-e18b-22a0-5c14-7d361a84b07d"
+          class="main-image-wrapper"
+        >
+          <img
+            src="images/Charles-Goddertz-Tap-Dance.jpg"
+            loading="lazy"
+            data-w-id="91f20384-8eba-8459-630b-6b71d0674d5c"
+            sizes="(max-width: 767px) 307.1953125px, 40vw"
+            alt=""
+            srcset="
+              images/Charles-Goddertz-Tap-Dance-p-500.jpeg   500w,
+              images/Charles-Goddertz-Tap-Dance-p-800.jpeg   800w,
+              images/Charles-Goddertz-Tap-Dance-p-1080.jpeg 1080w,
+              images/Charles-Goddertz-Tap-Dance.jpg         1200w
+            "
+          />
         </div>
       </div>
-      <div id="contact" class="contact-section">
+      <div class="container center">
+        <div class="background-video">
+          <div
+            data-poster-url="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-poster-00001.jpg"
+            data-video-urls="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.mp4,videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.webm"
+            data-autoplay="true"
+            data-loop="true"
+            data-wf-ignore="true"
+            class="background-video-2 w-background-video w-background-video-atom"
+          >
+            <video
+              id="1b3b9ad6-964a-1950-20b9-a5b99a912bc0-video"
+              autoplay=""
+              loop=""
+              style="
+                background-image: url('videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-poster-00001.jpg');
+              "
+              muted=""
+              playsinline=""
+              data-wf-ignore="true"
+              data-object-fit="cover"
+            >
+              <source
+                src="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.mp4"
+                data-wf-ignore="true"
+              />
+              <source
+                src="videos/Tap-Legacy-Foundation-Charles-Goddertz-Tribute-transcode.webm"
+                data-wf-ignore="true"
+              />
+            </video>
+          </div>
+        </div>
+        <p class="caption">Flo-Bert Award 2011</p>
+      </div>
+    </div>
+    <div data-w-id="f0da21b8-1398-ce8b-8559-b8adc7b4ff1b" class="main-wrapper">
+      <div data-w-id="70065484-527f-d1b5-7157-cf3d3ba09332" class="div-block">
+        <div class="bio-section">
+          <div id="bio" class="container">
+            <h2 class="heading-1">
+              <span class="tempo-even-whole">_</span>Bio<span
+                class="tempo-swing"
+                >_</span
+              >
+            </h2>
+            <div
+              data-w-id="3cbc277e-3f29-a6fb-711b-555829d7dda5"
+              class="gallery-container"
+            >
+              <div
+                style="
+                  -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                    rotateY(0) rotateZ(0) skew(0, 0);
+                "
+                class="gallery-wrapper"
+              >
+                <div class="gallery">
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Carol-Channing-Hello-Dolly.jpg"
+                      loading="lazy"
+                      alt="a picture with Carol Channing in Hello Dolly 1978"
+                      class="image-2"
+                    />
+                    <p class="caption">
+                      with Carol Channing in Hello Dolly (1978)
+                    </p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-02-2.jpg"
+                      loading="lazy"
+                      alt="a picture with teacher Jack Stanly and students"
+                      class="image-2"
+                    />
+                    <p class="caption">with teacher Jack Stanly and students</p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Melba-Huber.jpg"
+                      loading="lazy"
+                      alt="a picture with Melba Huber at the Steve Condos memorial in New York"
+                      class="image-2"
+                    />
+                    <p class="caption">
+                      with Melba Huber at the Steve Condos memorial in New York
+                    </p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Pearl-Bailey-1.jpg"
+                      loading="lazy"
+                      alt="a picture with Pearl Bailey in Hello Dolly 1976"
+                      class="image-2"
+                    />
+                    <p class="caption">
+                      with Pearl Bailey in Hello Dolly (1976)
+                    </p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Karen-Amerautt.jpg"
+                      loading="lazy"
+                      alt="a picture with dancing partner Karen Amerautt"
+                      class="image-2"
+                    />
+                    <p class="caption">with dancing partner Karen Amerautt</p>
+                  </div>
+                </div>
+                <div class="gallery">
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Carol-Channing-Hello-Dolly.jpg"
+                      loading="lazy"
+                      alt="a picture with Carol Channing in Hello Dolly 1978"
+                      class="image-2"
+                    />
+                    <p class="caption">
+                      with Carol Channing in Hello Dolly (1978)
+                    </p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-02-2.jpg"
+                      loading="lazy"
+                      alt="a picture with teacher Jack Stanly and students"
+                      class="image-2"
+                    />
+                    <p class="caption">with teacher Jack Stanly and students</p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Melba-Huber.jpg"
+                      loading="lazy"
+                      alt="a picture with Melba Huber at the Steve Condos memorial in New York"
+                      class="image-2"
+                    />
+                    <p class="caption">
+                      with Melba Huber at the Steve Condos memorial in New York
+                    </p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Pearl-Bailey-1.jpg"
+                      loading="lazy"
+                      alt="a picture with Pearl Bailey in Hello Dolly 1976"
+                      class="image-2"
+                    />
+                    <p class="caption">
+                      with Pearl Bailey in Hello Dolly (1976)
+                    </p>
+                  </div>
+                  <div class="gallery-image">
+                    <img
+                      src="images/Charles-Dance-and-Arts-Magazine-Karen-Amerautt.jpg"
+                      loading="lazy"
+                      alt="a picture with dancing partner Karen Amerautt"
+                      class="image-2"
+                    />
+                    <p class="caption">with dancing partner Karen Amerautt</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-text">
+              <p class="text-bio">
+                <span class="tempo-even-whole">_</span> Charles Goddertz has
+                been dancing professionally, on and off broadway since 1966. He
+                has worked with Carol Channing, Pearl Bailey, Bernedette Peters,
+                Donna Mckechnie and has tap danced in the musical Seesaw, for
+                Tommy Tune. <span class="tempo-even-hf">_</span>
+              </p>
+              <p class="text-bio">
+                <span class="tempo-even-hf">_</span> Charles currently teaches
+                tap dancing at Steps On Broadway here in New York City and has
+                been on Faculty since 1986. He has taught tap dancing for Cap
+                21/NYU Tisch, Dance Educators of America, Dance Masters of
+                America, Canada, Mexico, El Salvador, Moscato Tap Festival in
+                Rome and Milan, Big Apple Tap Festival and Tap City here in NYC.
+                His students have tap danced on and off Broadway, Las Vegas, for
+                The Rockettes and for Tap Festivals around the world, and USA. A
+                brief listing of students include Raquel Valiente, Darrin
+                Contessa, Paula Leggett Chase, Joni Michelle, Ayodele Casel
+                &amp; Kazu Kumaigai. <span class="tempo-swing">_</span>
+              </p>
+              <p class="text-bio">
+                <span class="tempo-swing">_</span> Mr. Goddertz’s own tap dance
+                performance background includes First Night Burlington-a New
+                Years Gala, Danny Hoctor’s Dance Caravan, Moscato Tap Festivals
+                Rome and Milan, The Tap Extravaganza, of which he received the
+                Flo-Bert Award in 2011, Steps Beyond and Tap City with dance
+                partner, the late Michele Ribble.
+                <span class="tempo-even-qt">_</span>
+              </p>
+              <p class="text-bio">
+                <span class="tempo-even-qt">_</span> Charles has been tap
+                dancing since the age of five, when his mother taught him his
+                first Irish and waltz clog. He received the prestigious Hoofers
+                Award from ATDF Tap City in July 2020 and did so in memory of
+                his late dancing partner, Michele Ribble, and tap teachers
+                Florence Coleman, Stan Mazin, Ronn Daniels, Jack Stanly and
+                lastly, dear mom and family who have supported him through the
+                years. <span class="tempo-even-whole-rev">_</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="classes" class="schedule-section">
+          <div class="container">
+            <h2 class="heading-1">
+              <span class="tempo-even-hf">_</span>Classes<span
+                class="tempo-swing"
+                >_</span
+              >
+            </h2>
+            <div class="schedule-videos">
+              <div class="background-video">
+                <div
+                  data-poster-url="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-poster-00001.jpg"
+                  data-video-urls="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.mp4,videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.webm"
+                  data-autoplay="true"
+                  data-loop="true"
+                  data-wf-ignore="true"
+                  class="background-video-2 w-background-video w-background-video-atom"
+                >
+                  <video
+                    id="55ed725d-3908-8af1-79dc-27e7aea1f3b8-video"
+                    autoplay=""
+                    loop=""
+                    style="
+                      background-image: url('videos/KULTUR-Charles-Goddertz-Tap-Intermediate-poster-00001.jpg');
+                    "
+                    muted=""
+                    playsinline=""
+                    data-wf-ignore="true"
+                    data-object-fit="cover"
+                  >
+                    <source
+                      src="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.mp4"
+                      data-wf-ignore="true"
+                    />
+                    <source
+                      src="videos/KULTUR-Charles-Goddertz-Tap-Intermediate-transcode.webm"
+                      data-wf-ignore="true"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="container-text">
+              <p class="date">
+                FYI, it&#x27;s <span class="today">DATE</span> today.
+              </p>
+              <div class="container-text whole">
+                <div class="container-table">
+                  <div class="div-block-3 green">
+                    <p class="date table">Wed.</p>
+                  </div>
+                  <div class="div-block-3 green">
+                    <p class="date table">6:00PM</p>
+                  </div>
+                  <div class="div-block-3 green">
+                    <p class="date table">Adv/Beg.</p>
+                  </div>
+                  <div class="div-block-3 green">
+                    <p class="date table">Steps on Broadway, NYC</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-text whole">
+                <div class="container-table">
+                  <div class="div-block-3 yellow">
+                    <p class="date table">Wed.</p>
+                  </div>
+                  <div class="div-block-3 yellow">
+                    <p class="date table">7:45PM</p>
+                  </div>
+                  <div class="div-block-3 yellow">
+                    <p class="date table">Basic</p>
+                  </div>
+                  <div class="div-block-3 yellow">
+                    <p class="date table">Steps on Broadway, NYC</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-text whole">
+                <div class="container-table">
+                  <div class="div-block-3 blue">
+                    <p class="date table">Sat.</p>
+                  </div>
+                  <div class="div-block-3 blue">
+                    <p class="date table">12:45PM</p>
+                  </div>
+                  <div class="div-block-3 blue">
+                    <p class="date table">Beg.</p>
+                  </div>
+                  <div class="div-block-3 blue">
+                    <p class="date table">Steps on Broadway, NYC</p>
+                  </div>
+                </div>
+              </div>
+              <h3 class="heading-2 text-form">
+                For private lessons, please contact me.
+              </h3>
+              <div class="spacer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="contact" class="contact-section">
         <div class="container">
           <h2 class="heading-1"><span class="tempo-even-hf">_</span>Contact<span class="tempo-swing">_</span></h2>
           <div class="form-block w-form">
@@ -254,41 +597,73 @@
             </div>
           </div>
         </div>
+      </div> -->
       </div>
     </div>
-  </div>
-  <div id="footer" class="footer">
-    <div class="container flex-h">
-      <div class="sockal-icon-wrapper">
-        <div class="social-icon">
-          <a href="https://www.facebook.com/charles.goddertz" target="_blank" class="link-block w-inline-block"><img src="images/5305153_fb_facebook_facebook-logo_icon.svg" loading="lazy" alt="Facebook icon"></a>
+    <div id="footer" class="footer">
+      <div class="container flex-h">
+        <div class="sockal-icon-wrapper">
+          <div class="social-icon">
+            <a
+              href="https://www.facebook.com/charles.goddertz"
+              target="_blank"
+              class="link-block w-inline-block"
+              ><img
+                src="images/5305153_fb_facebook_facebook-logo_icon.svg"
+                loading="lazy"
+                alt="Facebook icon"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a
+              href="https://www.instagram.com/charlesgoddertz/"
+              target="_blank"
+              class="link-block-2 w-inline-block"
+              ><img
+                src="images/4691240_instagram_icon.svg"
+                loading="lazy"
+                alt="Instagram icon
+"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a
+              href="https://www.youtube.com/channel/UCG0te-5FxznFszzkmFzwGFQ"
+              target="_blank"
+              class="link-block-3 w-inline-block"
+              ><img
+                src="images/2644987_media_social_youtube_icon.svg"
+                loading="lazy"
+                alt="Youtube icon
+"
+            /></a>
+          </div>
         </div>
-        <div class="social-icon">
-          <a href="https://www.instagram.com/charlesgoddertz/" target="_blank" class="link-block-2 w-inline-block"><img src="images/4691240_instagram_icon.svg" loading="lazy" alt="Instagram icon
-"></a>
-        </div>
-        <div class="social-icon">
-          <a href="https://www.youtube.com/channel/UCG0te-5FxznFszzkmFzwGFQ" target="_blank" class="link-block-3 w-inline-block"><img src="images/2644987_media_social_youtube_icon.svg" loading="lazy" alt="Youtube icon
-"></a>
-        </div>
+        <p class="copyright">
+          © <span class="year">YEAR</span> Charles Goddertz.
+        </p>
       </div>
-      <p class="copyright">© <span class="year">YEAR</span> Charles Goddertz.</p>
     </div>
-  </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61bab9b1fbbadc5d254a8d4e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    console.log("HERE");
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61bab9b1fbbadc5d254a8d4e"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("HERE");
         const dateVersion = {
-            weekday: "short",
-            year: "numeric",
-            month: "short",
-            day: "2-digit"
+          weekday: "short",
+          year: "numeric",
+          month: "short",
+          day: "2-digit",
         };
-        document.querySelector('.today').textContent = new Date().toLocaleDateString('en-US', dateVersion);
-        document.querySelector('.year').textContent = new Date().getFullYear();
-    });
-</script>
-</body>
+        document.querySelector(".today").textContent =
+          new Date().toLocaleDateString("en-US", dateVersion);
+        document.querySelector(".year").textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
 </html>
