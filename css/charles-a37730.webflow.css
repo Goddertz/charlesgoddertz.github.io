@@ -327,6 +327,10 @@ body {
   font-size: 2em;
   font-weight: 400;
 }
+.sub-title {
+  margin-top: -0.4em;
+  padding-bottom: 1em;
+}
 .embeded-video {
   position: relative;
   width: 100%;

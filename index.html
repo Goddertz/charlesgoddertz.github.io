@@ -486,6 +486,7 @@
               >_</span
             >
           </h2>
+          <h3 class="heading-2 sub-title text-form">2011 Flo Bert Awards.</h3>
           <div class="embeded-video">
             <iframe
               class="embeded-video-frame"
@@ -678,9 +679,10 @@
           month: "short",
           day: "2-digit",
         };
-        document.querySelector(".today").textContent =
-          new Date().toLocaleDateString("en-US", dateVersion);
+        // document.querySelector(".today").textContent =
+        //   new Date().toLocaleDateString("en-US", dateVersion);
         document.querySelector(".year").textContent = new Date().getFullYear();
+        console.log("Hello");
       });
     </script>
   </body>
