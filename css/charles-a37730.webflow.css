@@ -407,6 +407,35 @@ body {
   height: 0;
 }
 
+.clipbox {
+  max-width: 600px;
+  padding: 0 10%;
+}
+.clipbox img {
+  width: 100%;
+  display: block;
+  clip-path: url(#clip-cylinder);
+}
+svg.clippy {
+  position: absolute;
+  top: -999;
+  left: -999;
+  width: 0;
+  height: 0;
+}
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: orange;
+  padding: 15px;
+}
+.btn a {
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
 @media screen and (max-width: 991px) {
   .container.center {
     height: 450px;
