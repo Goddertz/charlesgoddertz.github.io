@@ -414,7 +414,10 @@ body {
 .clipbox img {
   width: 100%;
   display: block;
-  clip-path: url(#clip-cylinder);
+  border-radius: 56px;
+  /* -webkit-clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z"); */
+  /* clip-path: url(#clip-cylinder); */
+  /* -webkit-clip-path: url(#clip-cylinder); */
 }
 svg.clippy {
   position: absolute;
@@ -424,7 +427,7 @@ svg.clippy {
   height: 0;
 }
 .btn {
-  margin-top: 20px;
+  margin-top: 24px;
   width: 100%;
   border-radius: 50px;
   background-color: orange;
